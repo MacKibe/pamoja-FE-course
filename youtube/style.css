@@ -3,7 +3,7 @@
   --primary: #164c3a;
   --secondary: #1F5A46;
   --soft-green: #316950;
-  --hover-focus: #0d5740;
+  --hover-focus: #217259;
   --white: #ffffff;
 }
 
@@ -14,6 +14,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Standardizing icon n buttons */
+img {
+  height: 24px;
+}
+
 button {
   background: none;
   border: none;
@@ -22,19 +33,13 @@ button {
   align-items: center;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--primary); /* Changed background so the header stands out */
-}
-
 /* ---------------- Header Section ---------------- */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  height: 64px;
-  color: white;
+  height: 10vh;
 }
 
 /* This targets all three main sections in the header */
@@ -42,11 +47,6 @@ header section {
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
-/* Standardizing icon sizes */
-header img {
-  height: 24px;
 }
 
 /* Logo Section */
@@ -62,11 +62,12 @@ header img {
   background: var(--secondary);
   border-radius: 40px;
   overflow: hidden;
-  width: 400px;
+  width: 600px;
 }
 
 .search_area input {
   background: var(--soft-green);
+  color: white;
   height: 40px;
   outline: none;
   border: none;
@@ -111,4 +112,113 @@ header img {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+}
+
+.content_body {
+  display: flex;
+}
+
+/* ---------------- Aside Section ---------------- */
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+  min-height: 90vh;
+  padding: 1% 2%;
+  overflow: scroll;
+}
+
+aside section {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  margin: 2% 0;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+aside section div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5% 2%;
+  gap: 15px;
+}
+
+aside section div:hover {
+  background: var(--hover-focus);
+}
+
+.subscriptions h2{
+  margin: 3% 0;
+}
+
+.subscriptions div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriptions img:nth-child(1) {
+  border-radius: 50%;
+}
+
+.subscriptions img:nth-child(3) {
+  height: 16px;
+}
+
+/* ---------------- Main Content Section ---------------- */
+main {
+  flex: 1;
+  padding: 0 20px;
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+.categories_bar {
+  display: flex;
+  text-wrap: nowrap;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.category_item {
+  background: var(--secondary);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px 16px;
+  padding: 20px;
+}
+
+.video_img {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.video_description {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.video_description div:nth-child(2) {
+  flex: 1;
+}
+/* Size the avatar specifically */
+.video_description img:first-of-type {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* Target the "dots" menu icon */
+.video_description div:last-child img {
+  width: 24px;
+  cursor: pointer;
 }
