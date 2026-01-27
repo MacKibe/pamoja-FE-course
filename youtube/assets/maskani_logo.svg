@@ -1,0 +1,17 @@
+<svg width="800" height="240" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Play Icon Container -->
+  <circle cx="120" cy="120" r="80" fill="#0F3D2E"/>
+
+  <!-- Play Icon -->
+  <polygon points="95,80 160,120 95,160" fill="#C86B2A"/>
+
+  <!-- Text -->
+  <text x="240" y="150"
+        font-family="Poppins, Montserrat, Arial, sans-serif"
+        font-size="96"
+        font-weight="700"
+        fill="#1A1A1A">
+    Maskani
+  </text>
+</svg>
+

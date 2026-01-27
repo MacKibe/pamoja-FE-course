@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>James' Profile</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./download.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Ndichu James</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Connect">Connect</a>
+        <a href="#socials">Socials</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Professional Summary -->
+      <section>
+        <h2>Professional Summary</h2>
+        <img src="./me.jpg" width="200" alt="Photo of Ndichu James" />
+        <p>
+          I’m a passionate and results-driven Full Stack Developer with over 2
+          years of experience building scalable web applications.
+        </p>
+      </section>
+      <!-- Skills -->
+      <section id="Skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li><img src="./html.png" width="80" alt="HTML logo" /></li>
+          <li><img src="./css.png" width="80" alt="CSS logo" /></li>
+          <li><img src="./js.png" width="80" alt="JavaScript logo" /></li>
+        </ul>
+      </section>
+
+      <hr />
+      <!-- Connecting Form-->
+      <section id="Connect">
+        <h2>Let’s Connect 👋</h2>
+        <p>
+          Got a project idea, collaboration, or just want to say hi? Drop your
+          details below. I’d love to hear from you.
+        </p>
+        
+        <form>
+          <fieldset>
+            <legend><b>1. About You</b></legend>
+
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Alex Mwang000i"
+              required
+            />
+            <br /><br />
+
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="alex@example.com"
+              required
+            />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend><b>2. Your Message</b></legend>
+
+            <label for="reason">Why are you reaching out?</label><br />
+            <select id="reason" name="reason">
+              <option value="">-- Choose one --</option>
+              <option value="project">Project collaboration</option>
+              <option value="job">Job opportunity</option>
+              <option value="freelance">Freelance work</option>
+              <option value="networking">Networking</option>
+              <option value="other">Something else</option>
+            </select>
+            <br /><br />
+
+            <label for="message">Tell me more</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="50"
+              placeholder="Write your message here..."
+            ></textarea>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend><b>3. Just Curious 🤔</b></legend>
+            <p>How did you find me?</p>
+            <label>
+              <input type="radio" name="source" value="linkedin" />
+              LinkedIn 
+            </label><br />
+            <label>
+              <input type="radio" name="source" value="github" />
+              GitHub 
+            </label><br />
+            <label>
+              <input type="radio" name="source" value="friend" />
+              A friend recommended you 
+            </label><br />
+            <label>
+              <input type="radio" name="source" value="other" />
+              Somewhere else 
+            </label><br /><br />
+            <label for="something_else">If you selected somethine else</label
+            ><br />
+            <textarea
+              name="something_else"
+              id="something_else"
+              cols="50"
+              rows="5"
+              placeholder="where did you find me?"
+            ></textarea>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend><b>4. Ratings😅</b></legend>
+            <label for="ratings">Rate my website? (0 - 10)</label><br />
+            <input type="range" name="ratings" min="0" max="10" id="ratings" />
+          </fieldset>
+
+          <br />
+          <button type="submit">Send Message</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+      <section id="socials">
+        <h2>My socials.</h2>
+        <a href="https://www.linkedin.com/in/ndichu-james/" target="_blank">
+          <img src="./linkedin.webp" alt="linkedin logo" width="100" />
+        </a>
+        <a href="https://github.com/MacKibe" target="_blank">
+          <img src="./github.png" alt="github logo" width="80" />
+        </a>
+        <a href="https://wa.me/+254701069382" target="_blank">
+          <img src="./app.png" alt="linkedin logo" width="88" />
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Ndichu</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+/* ---------------- Color Scheme ---------------- */
+:root {
+  --primary: #164c3a;
+  --secondary: #1F5A46;
+  --soft-green: #316950;
+  --hover-focus: #0d5740;
+  --white: #ffffff;
+}
+
+/* ---------------- Resetting styles ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary); /* Changed background so the header stands out */
+}
+
+/* ---------------- Header Section ---------------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 64px;
+  color: white;
+}
+
+/* This targets all three main sections in the header */
+header section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Standardizing icon sizes */
+header img {
+  height: 24px;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Search Area */
+.search_area form {
+  display: flex;
+  align-items: center;
+  background: var(--secondary);
+  border-radius: 40px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.search_area input {
+  background: var(--soft-green);
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0 16px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.search_area button[type="submit"] {
+  height: 40px;
+  background: var(--secondary);
+  padding: 0 20px;
+}
+
+/* Mic button style */
+.search_area > button[type="button"] {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: var(--secondary);
+  justify-content: center;
+}
+
+/* Profile Area Customization */
+.profile_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+.profile_area .create_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5%;
+  background: var(--secondary);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.user_profile img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
