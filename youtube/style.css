@@ -33,6 +33,11 @@ button {
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ---------------- Header Section ---------------- */
 header {
   display: flex;
@@ -53,6 +58,10 @@ header section {
 .logo {
   display: flex;
   align-items: center;
+}
+
+.logo img {
+  height: 50px;
 }
 
 /* Search Area */
@@ -187,11 +196,21 @@ main {
   border-radius: 20px;
   cursor: pointer;
 }
+
 .videos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px 16px;
   padding: 20px;
+}
+
+.videos a {
+  padding: 2%;
+}
+
+.videos a:hover{
+  background: var(--hover-focus);
+  border-radius: 12px;
 }
 
 .video_img {
@@ -205,11 +224,25 @@ main {
 .video_description {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 0 12px;
 }
+
+.video_description h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.video_description h4 {
+  font-size: 15px;
+}
+
 .video_description div:nth-child(2) {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
+
 /* Size the avatar specifically */
 .video_description img:first-of-type {
   width: 36px;
@@ -221,4 +254,11 @@ main {
 .video_description div:last-child img {
   width: 24px;
   cursor: pointer;
+}
+
+.video_time {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  padding: 2% 0;
 }
