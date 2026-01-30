@@ -122,3 +122,11 @@ header section {
   width: 32px;
   height: 32px;
 }
+
+.category_item {
+  text-wrap: nowrap;
+  background: rgba(206, 255, 206, 0.366);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}

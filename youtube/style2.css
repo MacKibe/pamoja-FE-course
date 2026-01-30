@@ -174,3 +174,29 @@ h2{
   padding: .5% 2%;
   border-radius: 20%;
 }
+
+/* Categories bar */
+.categories_bar{
+  gap: 1.5%;
+}
+
+/* Sidebar */
+.related_videos img{
+  width: 50%;
+  height: max-content;
+  border-radius: 5%;
+}
+
+.related_videos a{
+  gap: 1%;
+  margin: 2% 0;
+}
+
+.related_video_info {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.related_video_mini_info {
+  gap: 2%;
+}
